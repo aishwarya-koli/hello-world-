@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=text],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.container{
+  max-width: 800px;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+.button{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  justify-content: center;
+}
+.button:hover {
+  background-color: #f1f1f1;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.col-20 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-20, .col-50, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+    <h1>Final Booking Details</h1>
+    <div class="container">
+        <form id="regForm">
+        
+            <div class="row">
+              <div class="col-25">
+                  <label for="total price">Total Price</label>
+              </div>
+              <div class="col-75">
+                  <input type="text" id="total price" name="total price" >
+              </div>
+          <br>
+          Select your Payment Method:<br><br>
+        <div class="btn-group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Debit Card <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu">
+                  <div class="col-75">
+                      <input type="text" id="account_no" name="account_no"placeholder="Enter Account no ">
+                  </div>
+                  <div class="col-75">
+                      <input type="text" id="cvv" name="cvv" placeholder="cvv ">
+                  </div>
+              </ul>
+            </div>
+          </div><br><br>
+          </select>
+        
+          <button class="button">submit</button>
+        
+  </form> </div>
+</body>
+</html>

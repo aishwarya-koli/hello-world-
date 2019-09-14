@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=text],textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+.button{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.button:hover {
+  background-color: #f1f1f1;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+.col-20 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-20, .col-50, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+</style>
+</head>
+<body>
+    <h1>Get Booking Details</h1>
+    <div class="container">
+        <form id="regForm">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="name" placeholder="Enter your Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobile_no">Mobile No</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mobile_no" name="mobileno" placeholder="Enter Mobile No">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                  <label for="pickup place">pickup Place</label>
+              </div>
+              <div class="col-75">
+                  <input type="text" id="pickup place" name="pickup place" placeholder="Enter Pickup Place">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="Date">Date</label>
+            </div>
+            <div class="col-75">
+                <input type="date" id="date" name="date" placeholder="Enter Date ">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="time">Time</label>
+          </div>
+          <div class="col-75">
+              <input type="time" id="time" name="time" placeholder="Enter Time ">
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <label for="tour package">Tour Package</label>
+        </div>
+        <div class="col-75">
+            <input type="text" id="tour package" name="tour package ">
+        </div>
+    </div><br></br>
+    <button class="button">Verify</button>
+  </form> 

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* { 
+    box-sizing: border-box
+}
+
+body {
+  background-color: #b0e0e6;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.container {
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+</style>
+</head>
+<body>
+   
+      
+      <center><div class="container-fluid"><br>
+       
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="name" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="vehicleno">Vehicle No</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="vehicleno" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="drivername">Driver Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="drivername" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="number">Insurance Number</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="number" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="rcbook">RC Book</label> 
+          </div>
+
+          <div class="col-75">
+            <input type="text" name="rcbook" value ="" disabled> <br>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="puc">PUC Number</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="puc" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="tax">Tax paid or not</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="tax" value ="" disabled><br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="capacity">Capacity</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="capacity" value ="" disabled><br>
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="col-25">
+            <label for="type">Type</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="type" value ="" disabled><br>
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="col-25">
+            <label for="price">Price(per km)</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="price" value ="" disabled><br>
+          </div>
+        </div>
+
+    </div></center>
+        <center><div class="row">
+                    <div class="col-75">
+                        <button type="button" class="btn btn-success">Update</button>
+                        <button type="button" class="btn btn-success">Delete</button>
+                    </div>
+                </div></center>
+
+        
+
+
+
+        
+</body>
+</html>
